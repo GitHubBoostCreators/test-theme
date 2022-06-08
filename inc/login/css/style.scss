@@ -1,0 +1,41 @@
+body {
+    background-color: #292929;
+
+    #login {
+        max-width: 500px;
+        width: auto;
+        padding: 8% 20px 0;
+        margin: auto;
+
+        #loginform {
+            box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.9);
+
+            input[type="text"] {
+                font-size: 18px;
+            }
+
+            .submit {
+                .button-primary {
+                    background: #e30613;
+                    border-color: #e30613;
+                    &:hover {
+                        background: #d11214;
+                        border-color: #d11214;
+                    }
+                }
+            }
+        }
+
+        #nav,
+        #backtoblog {
+            a {
+                color: #fff;
+            }
+        }
+        .privacy-policy-page-link {
+            a {
+                color: #666;
+            }
+        }
+    }
+}

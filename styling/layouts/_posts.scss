@@ -1,0 +1,95 @@
+.post_header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.portfolio-list {
+    .col {
+        .portfolio-item {
+            background-color: $black;
+            transition: all 0.4s;
+
+            &:hover {
+                img {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+/*.news-list {
+    .col {
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 60px;
+        }
+
+        .news-item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .news-image {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                    width: 131px;
+                    height: 87px;
+                    display: block;
+                    position: absolute;
+                    right: 15px;
+                    bottom: -20px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .news-body {
+                position: relative;
+                padding-top: 10px;
+
+                h3 {
+                    font-weight: 300;
+                    color: $primary;
+                    font-size: 1.25rem;
+                }
+
+                .publishdate {
+                    font-size: 0.95em;
+                    color: #aaa;
+                    margin-bottom: 0.5rem;
+                }
+
+                .category-labels {
+                    a {
+                        padding: 2px 8px;
+                        font-size: 0.75rem;
+                        background-color: #ddd;
+                        border-radius: 2px;
+                        font-size: 400;
+                        margin-right: 7px;
+                        color: $body-color;
+                        text-decoration: none;
+
+                        &:hover {
+                            background-color: $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+*/

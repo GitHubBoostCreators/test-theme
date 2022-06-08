@@ -1,0 +1,284 @@
+footer {
+    color: $white;
+    margin-top: auto;
+    background-image: url($uploadpath + "Gradient-lines-01.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 30%;
+    z-index: -1;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 18%;
+    }
+
+
+    &:before {
+        content: "";
+        width: 100vw;
+        padding-top: 34%;
+        background-image: url($imagepath + "footer-bottom.svg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -5%;
+
+        @include media-breakpoint-up(md) {
+            top: -20%;
+        }
+        @include media-breakpoint-up(lg) {
+            top: -26%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: -34%;
+        }
+      }
+  
+
+
+    .footer-menu {
+    .footer-menu-container {
+        @extend .container;
+
+        h5 {
+            margin-bottom: 1em;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    display: block;
+                    padding: .35em 0;
+                }
+            }
+        }
+    }
+
+    }
+
+    .footer-absolute {
+        color: $white;
+        padding: 10px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 40px 0;
+        }
+
+        .footer-absolute-container {
+            font-size: 0.85rem;
+
+            @extend .container;
+            display: block;
+
+            @include media-breakpoint-up(md) {
+                display: flex;
+            }
+
+            .navbar-nav {
+                display: block;
+
+                @include media-breakpoint-up(sm) {
+                    display: flex;
+                }
+
+                li {
+                    a {
+                        color: $white;
+                        padding: 5px 0;
+                        display: block;
+                        text-decoration: none;
+
+                        @include media-breakpoint-up(sm) {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+            .site-info {
+                padding: 5px 0;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .social-icon {
+            color: $white;
+            font-size: 24px;
+            padding: 0.5em;
+            text-decoration: none;
+
+            &:after {
+                font-family: "Font Awesome 5 Brands";
+                font-weight: 400;
+            }
+
+            &.facebook {
+                &:after {
+                    content: "\f39e";
+                }
+            }
+            &.instagram {
+                &:after {
+                    content: "\f16d";
+                }
+            }
+            &.youtube {
+                &:after {
+                    content: "\f167";
+                }
+            }
+            &.twitter {
+                &:after {
+                    content: "\f099";
+                }
+            }
+            &.googleplus {
+                &:after {
+                    content: "\f0d5";
+                }
+            }
+            &.pinterest {
+                &:after {
+                    content: "\f231";
+                }
+            }
+        }
+    }
+
+    .copyright {
+        line-height: 1em;
+        .developer-icon {
+            height: 16px;
+            width: 16px;
+            background-image: url($masterthemedpath + "img/developericon-white.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            display: inline-block;
+        }
+    }
+
+}
+
+/*footer {
+    color: $white;
+    background-color: $primary;
+    position: relative;
+    padding-top: 120px;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 0;
+    }
+
+
+    &:before {
+        content: "";
+        background-image: url($imagepath + "logo-vessumse-hoeve-footer.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 254px;
+        height: 155px;
+        position: absolute;
+        top: -30px;
+        left: calc(50% - 127px);
+        z-index: 99;
+
+        @include media-breakpoint-up(lg) {
+            width: 368px;
+            height: 220px;
+            left: calc(50% - 184px);
+        }
+    }
+
+    .menu-footer {
+        padding: 30px 0;
+
+        h3 {
+            color: $white;
+        }
+
+        a {
+            color: $white;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding: 60px 0;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                margin: 0 0 0;
+            }
+        }
+    }
+
+    .absolute-footer {
+        padding: 10px 0;
+        font-size: 0.85em;
+        color: $white;
+
+        .container {
+            .navbar-nav {
+                display: flex;
+
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                }
+
+                li {
+                    @include media-breakpoint-up(md) {
+                        border-left: 1px solid $white;
+                    }
+
+                    &:first-child {
+                        border-left: none;
+                    }
+
+                    a {
+                        padding: 5px 10px;
+                        display: block;
+                        text-decoration: none;
+                        color: $white;
+
+                        @include media-breakpoint-up(md) {
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+            .copyright {
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+.social-icons {
+    li {
+        a {
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}*/

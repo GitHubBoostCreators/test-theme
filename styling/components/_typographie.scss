@@ -1,0 +1,57 @@
+html {
+    font-size: 18px;
+}
+h1 {
+    margin-bottom: 1.15rem;
+    color: $purple;
+}
+h3 {
+    font-weight: $font-weight-bold;
+}
+
+.lead {
+    margin-bottom: 1.85rem;
+}
+
+.gradient-underline {
+    &:after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 70px;
+        margin: 15px 0 20px 0;
+        @include gradient($pink, $purple);
+    }
+}
+
+ul.list-checks {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        padding-left: 25px;
+        margin-bottom: .75em;
+
+        &:before {
+            content: "\f00c";
+            color: $primary;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: inherit;
+            text-rendering: auto;
+            -moz-osx-font-smoothing: grayscale;
+            margin-left: -25px;
+            margin-right: 10px;
+        }
+    }
+
+    &.invert {
+        li {
+            color: $white;
+            &:before {
+                color: $white;
+            }
+        }
+
+    }
+}
